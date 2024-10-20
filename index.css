@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #3F51B5 ; 
+    --second-color : #2196F3 ; 
+}
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+    position: fixed;
+    width: 100%;
+    background-color: #f0f0f0;
+    z-index: 9999 ; 
+}
+.header .logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px ;
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.header .content a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+}
+.header .content a:hover{
+    color: var(--second-color);
+}
+/* container */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 200px;
+    height: 100vh;
+    width: 100%;
+    background: url("images/shape_neon_shapes_141143_3840x2486.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .info p:first-child{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container .info span{
+    font-size: 42px ;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    color: var(--main-color);
+}
+.container .info .text{
+    font-size: 32px ;
+    font-weight: 700 ;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.container .info .work{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: .7s ease;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.container .info .work:hover{
+    background-color: var(--second-color);
+    transform: scale(1.1);
+}
+.container .info .tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+.container .info .tags a{
+    color: #fff;
+    font-size:25px;
+}
+.container img{
+    width: 400px ;
+    height: 400px;
+}
+/* services */
+.services{
+    padding: 100px 200px;
+    margin:auto ;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+.services h1 {
+    font-size: 40px ;
+    font-weight:bold; 
+    color: var(--main-color);
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.services .content .card {
+    margin: 15px ;
+    padding: 25px;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    transition: .7s ease;
+    cursor: pointer;
+}
+.services .content .card:hover {
+    transform: scale(1.1);
+}
+.services .content .card i{
+    font-size: 100px ;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+.services .content .card h2{
+    margin-bottom: 20px ;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+/* projects */
+.projects {
+    padding:50px 200px ;
+    background-color:#080b1a;
+    width: 100%;
+}
+.projects h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 40px ;
+    font-weight:bold; 
+}
+.projects .content{
+    margin-top: 30px;
+    display:grid ;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.projects .content .box {
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .7s ease;
+}
+.projects .content .box:hover{
+    transform: scale(1.1);
+}
+.projects .content .box:hover img{
+    opacity: 0.9;
+}
+.projects .content .box img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.projects .content .box p{
+    padding: 10px ;
+    font-size: 12px ;
+}
+.projects .content .box .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 10px 10px 10px;
+}
+.projects .content .box .info span{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+}
+.projects .content .box .info a {
+    text-transform: uppercase;
+    color: var(--second-color);
+    font-size: 18px ;
+    font-weight: 600;
+    text-decoration: none;
+}
+.projects .content .box .info a:hover{
+    color: #3F51B5;
+}
+/* contact */
+.contact{
+    padding: 100px 200px ;
+    background-color: #fff;
+    width: 100%;
+}
+.contact h1{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 40px ;
+    font-weight:bold; 
+}
+.contact .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.contact .box .card {
+    margin: 15px ;
+    padding: 25px;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    transition: .7s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.contact .box .card:hover{
+    transform: scale(1.1);
+}
+.contact .box .card i{
+    font-size: 100px ;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+.contact .card .phone{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact .card .info {
+    font-size: 18px ; 
+    margin-top: 20px ; 
+    display: block;
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    background-color: #080b1a;
+}
+.footer h1 {
+    font-size: 18px;  
+    color: #fff;
+}
+.footer h1 span {
+    font-size: 18px ;
+    color: var(--main-color);
+}
+.footer .links{
+    display: flex;
+    align-items: center;
+}
+.footer .links a {
+    margin-left: 10px;
+    font-size: 20px;
+    color:#fff;
+}
+@media (max-width:1024px) {
+    .header {
+        padding: 10px 12px ;
+    }
+    .header .content a{
+        margin-right: 10px;
+    }
+    .container{
+        padding: 10px 12px;
+    }
+    .container img{
+        display: none;
+    }
+    .services {
+        padding: 10px 12px;
+    }
+    .projects{
+        padding: 10px 12px;
+    }
+    .contact{
+        padding: 10px 12px;
+    }
+}
+@media (max-width:500px) {
+    .header .content a{
+        margin-right: 5px;
+    }
+}
+@media (max-width:400px) {
+    .header .content a{
+        font-size: 14px;
+    }
+}
